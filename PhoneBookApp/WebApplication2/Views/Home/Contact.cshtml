@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title.</h2>
+
+
+<style>
+    ul {
+        display: inline;
+    }
+</style>
+
+<table style="width:100%">
+    <tr>
+        <th>Name</th>
+        <th>Phone Number</th>
+        <th>Email</th>
+        <th>Home Address</th>
+    </tr>
+    <tr>
+        <td>Jill Smith</td>
+        <td>03214198902</td>
+        <td>jill@gmail.com</td>
+        <td>4D block model town Lahore</td>
+    </tr>
+
+</table>
+
+<br /><br /><br /><br />
+<button onClick='redirectOnClick()'> Add person</button>
+<script>
+    function redirectOnClick() {
+        document.location = 'AddPerson';
+    }
+</script>
+<button onClick='redirectOnClick3()'> View person detail</button>
+<script>
+    function redirectOnClick3() {
+        document.location = 'ViewPerson';
+    }
+</script>
+
+<button onClick='redirectOnClick2()'> Delete person</button>
+<script>
+    function redirectOnClick2() {
+        document.location = 'DeletePerson';
+    }
+</script>
+<button onClick='redirectOnClick1()'> Edit person</button>
+<script>
+    function redirectOnClick1() {
+        document.location = 'EditPerson';
+    }
+</script>
+
+
+
+
+<address>
+    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+</address>

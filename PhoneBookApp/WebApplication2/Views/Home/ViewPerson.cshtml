@@ -1,0 +1,25 @@
+﻿@model WebApplication2.Models.PersonViewModel
+
+@{
+    ViewBag.Title = "ViewPerson";
+}
+
+@using (Html.BeginForm("ViewPerson", "HomeController", FormMethod.Post, new { target = "_blank" }))
+{
+    <h2>View Person</h2>
+    <p>First name:</p>
+    <p>Middle Name: </p>
+    <p>Last Name:</p>
+
+    <p>Date of Birth: </p>
+    <p>Added On: </p>
+    <p>Added by:</p>
+    <p>Home Address:</p>
+    <p>Home City: </p>
+    <p>Fcebook Id: </p>
+
+    <p>LinkedIn Id: </p>
+    <p>Update On: </p>
+    <p>Twitter Id: </p>
+    <p>Email Id: </p>
+}

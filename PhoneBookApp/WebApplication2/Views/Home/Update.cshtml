@@ -1,0 +1,32 @@
+﻿@model WebApplication2.Models.PersonViewModel
+
+@{
+    ViewBag.Title = "Update";
+}
+
+<h2>Update</h2>
+<div>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+    <p>First name: @Html.TextBoxFor(x => x.FirstName) </p>
+    <p>Middle Name: @Html.TextBoxFor(x => x.MiddleName)</p>
+    <p>Last Name: @Html.TextBoxFor(x => x.LastName)</p>
+
+    <p>Date of Birth: @Html.TextBoxFor(x => x.DOB)</p>
+    <p>Added On: @Html.TextBoxFor(x => x.AddedOn)</p>
+    <p>Added by: @Html.TextBoxFor(x => x.AddedBy)</p>
+    <p>Home Address: @Html.TextBoxFor(x => x.HomeAddress)</p>
+    <p>Home City: @Html.TextBoxFor(x => x.HomeCity)</p>
+    <p>Fcebook Id: @Html.TextBoxFor(x => x.FacebookId)</p>
+
+    <p>LinkedIn Id: @Html.TextBoxFor(x => x.LinkedInId)</p>
+    <p>Update On: @Html.TextBoxFor(x => x.UpdateOn)</p>
+    <p>Twitter Id: @Html.TextBoxFor(x => x.TwitterId)</p>
+    <p>Email Id: @Html.TextBoxFor(x => x.EmailId)</p>
+
+
+    <input type="submit" value="ADDED" />
+}
+</div>
